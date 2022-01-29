@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    /* background: #f7f7f7; */
+    background: #f7f7f7;
 }
 
 section{
@@ -128,6 +128,7 @@ nav{
 }
 .create-text p{
     font-size: 18px;
+    color: #666666;
 }
 .Collaborate{
     background-image: url(Image/Collab_8x3_v2.jpg);
@@ -160,21 +161,75 @@ nav{
 }
 .think-text{
     flex: 1 1 25rem;
+    padding-left: 15rem;
 }
 .think-img img{
     flex: 1 1 40rem;
-    height: 404px;
+    height: 600px;
     width: 547px;
 }
 .think-text h2{
     font-size: 4rem;
+    padding: 2rem 0;
 }
 .think-text p{
     font-size: 2.25rem;
     font-weight: 300;
     color: #666666;
 }
-
+.access{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.access-img img{
+    height: 526px;
+    width: 680px;
+    margin: auto;
+}
+.access-text{
+    padding: 0 50px;
+}
+.access-text h2{
+    font-size: 4rem;
+    padding: 2rem 0;
+}
+.access-text p{
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #666666;
+}
+.media{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding-left: 100px;
+}
+.windows{
+    display: grid;
+    gap: 1rem;
+}
+.windows i{
+    font-size: 45px;
+    color: gray;
+}
+.windows b{
+    font-size: 2rem;
+}
+.windows a{
+    color: gray;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: normal;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.windows a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.windows i:hover{
+    color: blue;
+}
 
 
 /*  tablet  */    
@@ -225,14 +280,47 @@ nav{
     .Collaborate{
         margin-top: 300px;
     }
-    .c-text h2,.c-text p{
+    .c-text h2{
         color: black;
+    }
+    .c-text p{
+        color: #666666;
     }
     .think-img img{
         height: auto;
         width: 100%;
     }
-    
+    .think-text{
+        padding: 0 10rem;
+    }
+    .access-img img{
+        height: auto;
+        width: 100%;
+    }
+    .access{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+    }
+    .access-text{
+        grid-row: 1 / 1;
+        padding: 4rem 6rem;
+    }
+    .access-img img{
+        grid-row: 1 / -1;
+    }
+    .windows a{
+        padding-right: 20px;
+        display: inline-block;
+    }
+    .media{
+        display: inline-block;
+        padding-left: 20px;
+    }
+    .windows{
+        gap: 2rem;
+    }
 
 
 }
