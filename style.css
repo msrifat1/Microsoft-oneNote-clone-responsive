@@ -48,7 +48,7 @@ nav{
     text-decoration: underline;
 }
 .home{
-    background-image: url(image/hero.png);
+    background-image: url(Image/hero.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
