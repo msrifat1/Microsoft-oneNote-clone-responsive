@@ -1,0 +1,267 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    /* text-decoration: none; */
+    font-family: "SegoeUI","Segoe UI",Segoe,"Segoe WP","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue",-apple-system,Roboto,Helvetica,"BBAlpha Sans","S60 Sans",Arial,sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    /* background: #f7f7f7; */
+}
+
+section{
+    /* padding: 2rem 12%; */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    justify-content: space-between;
+    padding: 0 12%;    
+}
+.logo img{
+    height: 5rem;
+    width: 15rem;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border: .1rem solid white;
+    border-radius: .3rem;
+    padding: .7rem 2rem;
+    margin: 0 .1rem;
+}
+
+.btn a:hover{
+    border: .1rem solid gray;
+    color: gray;
+    text-decoration: underline;
+}
+.home{
+    background-image: url(image/hero.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.home-text{
+    position: absolute;
+}
+.home-text h1{
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    color: white;
+    /* width: 400px; */
+    font-weight: normal;
+}
+
+.btn2{
+    padding: 2rem 6rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.325rem;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #7321a6;
+}
+
+.btn2:hover{
+    text-decoration: underline;
+    background-color: #E0EFF1;
+    color: #7321a6; 
+}
+.btn-block{
+    padding: 2rem 6rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.325rem;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #7321a6;
+    display: none;
+}
+
+.btn-block:hover{
+    text-decoration: underline;
+    background-color: #E0EFF1;
+    color: #7321a6; 
+}
+.home-text{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+.create{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.create-img img{
+    height: auto;
+    width: 100% ;
+    text-align: center;
+}
+.create-text{
+    /* width: 500px; */
+    margin: auto;
+}
+.create-text h1{
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    
+}
+.create-text p{
+    font-size: 18px;
+}
+.Collaborate{
+    background-image: url(Image/Collab_8x3_v2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+.c-text{
+    position: absolute;
+    top: 40%;
+    padding: 0 60px 30px 100px;
+}
+.c-text h2{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.c-text p{
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 300
+}
+.think{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.think-text{
+    flex: 1 1 25rem;
+}
+.think-img img{
+    flex: 1 1 40rem;
+    height: 404px;
+    width: 547px;
+}
+.think-text h2{
+    font-size: 4rem;
+}
+.think-text p{
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #666666;
+}
+
+
+
+/*  tablet  */    
+
+@media(max-width: 991px){
+
+    html{
+        font-size: 50%;
+    }
+    header{
+        /* padding: 2rem; */
+    }
+    section{
+        /* padding: 2rem; */
+    }
+    .home{
+        overflow: hidden;
+    }
+    .block{
+        display: none;
+    }
+    .btn-block{
+        display: block;
+    }
+    .btn2{
+        display: none;
+    }
+    .create{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px auto;
+    }
+    .create-img img{
+        grid-row: 1 / -1;
+        height: auto;
+        width: 100%;
+    }
+    .create-text{
+        grid-row: 1 / 1;
+        padding: 0 80px;
+        margin: auto;
+    }
+    .c-text{
+        position: absolute;
+        top: -50%;
+        /* padding: 0 60px 30px 100px; */
+    }
+    .Collaborate{
+        margin-top: 300px;
+    }
+    .c-text h2,.c-text p{
+        color: black;
+    }
+    .think-img img{
+        height: auto;
+        width: 100%;
+    }
+    
+
+
+}
+    /* big phone  */
+@media(max-width: 768px){
+
+    html{
+        font-size: 40%;
+    }
+    nav{
+        height: 8rem;
+    }
+    
+}
+
+
+/* small phone */
+
+@media(max-width: 450px){
+    
+    html{
+        font-size: 30%;
+    }
+    nav{
+        height: 8rem;
+    }
+    .create-text{
+        font-size: 12px;
+        padding: 0 30px;
+    }
+
+}
