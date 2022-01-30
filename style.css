@@ -119,6 +119,7 @@ nav{
 .create-text{
     /* width: 500px; */
     margin: auto;
+    padding-right: 60px;
 }
 .create-text h1{
     font-size: 32px;
@@ -148,6 +149,7 @@ nav{
     font-size: 4rem;
     font-weight: 300;
     margin-bottom: 2rem;
+    font-weight: normal;
 }
 .c-text p{
     color: #fff;
@@ -171,6 +173,7 @@ nav{
 .think-text h2{
     font-size: 4rem;
     padding: 2rem 0;
+    font-weight: normal;
 }
 .think-text p{
     font-size: 2.25rem;
@@ -193,6 +196,7 @@ nav{
 .access-text h2{
     font-size: 4rem;
     padding: 2rem 0;
+    font-weight: normal;
 }
 .access-text p{
     font-size: 2.25rem;
@@ -203,6 +207,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     padding-left: 100px;
+    margin: 5rem 0;
 }
 .windows{
     display: grid;
@@ -214,6 +219,7 @@ nav{
 }
 .windows b{
     font-size: 2rem;
+    font-weight: normal;
 }
 .windows a{
     color: gray;
@@ -231,6 +237,122 @@ nav{
     color: blue;
 }
 
+.office-logo {
+    height: 55px;
+    width: 120px;
+}
+.office-text h2{
+    font-size: 4rem;
+    font-weight: normal;
+    color: white;
+}
+
+.office-text p{
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: white;
+    padding: 20px 0;
+}
+.office img{
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+.office-text {
+    padding: 60px 0px 0px 100px;
+    width: 60%;
+    position: absolute;
+}
+.connect{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+.connect-img img{
+    width: 532px;
+    height: 393px;
+}
+.connect-text h2{
+    font-size: 4rem;
+    font-weight: normal;
+}
+.connect-text{
+    padding-right: 50px;
+}
+.connect-text p{
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #666666;
+    padding: 20px 0;
+}
+.connect-text a{
+    margin-top: 1rem;
+}
+.btn3{
+    padding: 10px 30px;
+    background-color: #7321a6;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.btn3:hover{
+    text-decoration: underline;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0px 100px;
+}
+
+.footer-menu ul{
+    list-style: none;
+}
+.footer-menu b{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.footer-menu ul li a{
+    display: flex;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #666666;
+}
+.footer-menu ul li a:hover{
+    color: #7321a6;
+    text-decoration: underline;
+}
+.footer-icon ul{
+    list-style: none;
+}
+.footer-icon ul li i{
+    font-size: 4rem;
+    margin: 0 10px;
+    color: gray;
+    cursor: pointer;
+}
+.footer-icon ul li i:hover{
+    color: black;
+}
+.copy{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+.copy i,.copy a,.copy p{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #66666666;
+}
+.copy a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.link a{
+    margin: 0 20px;
+}
 
 /*  tablet  */    
 
@@ -316,10 +438,34 @@ nav{
     }
     .media{
         display: inline-block;
-        padding-left: 20px;
+        padding-left: 49px;
     }
     .windows{
         gap: 2rem;
+    }
+    .office-text{
+        width: 90%;
+        position: relative;
+        padding: 0 45px;
+    }
+    .office-text h2,.office-text p{
+        color: black;
+    }
+    .connect-img img{
+        width: 100%;
+        height: auto;
+    }
+    .connect{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .connect-text{
+        grid-row: 1 / 1;
+        padding: 4rem 6rem;
+    }
+    .connect-img img{
+        grid-row: 1 / -1;
     }
 
 
@@ -332,6 +478,16 @@ nav{
     }
     nav{
         height: 8rem;
+    }
+    footer{
+        display: inline-block;
+        padding: 30px 50px;
+    }
+    .copy{
+        display: inline-block;
+    }
+    .link a{
+        margin: 0 0;
     }
     
 }
